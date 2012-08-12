@@ -1,0 +1,35 @@
+#logo {
+  padding-top: 25px;
+}
+
+#sidebar {
+  margin-left: 30px;
+}
+
+nav#top-nav-bar {
+  padding-top: 15px;
+  margin-left: 30px;
+
+  #search-bar {
+    float: left;
+    padding-left: 0;
+    margin-left: -20px;
+
+    #taxon {
+      display: none;
+    }
+  }
+
+  ul {
+    li {
+      a {
+        text-transform: none;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+
+
+

@@ -16,5 +16,13 @@ gem 'spree', :git => 'git://github.com/kunalchaudhari/spree.git', :branch => 're
 
 gem 'spree_auth_devise', :git => 'git://github.com/kunalchaudhari/spree_auth_devise.git', :branch => 'support-spree-1851'
 
-gem 'unicorn'
-gem 'capistrano'
+group :production do
+  gem 'unicorn'
+  gem 'mysql2'
+  gem 'foreman'
+  gem 'therubyracer' #only required for 0.70.x or later
+end
+
+group :development do
+  gem 'capistrano'
+end

@@ -1,5 +1,7 @@
-PATH
-  remote: ../../contributions/spree
+GIT
+  remote: git://github.com/kunalchaudhari/spree.git
+  revision: 54c5c1e7ff2ea9482d0926b30b05ff3265bcc5f0
+  branch: refactor-header-partial-for-deface-override
   specs:
     spree (1.2.0.rc1)
       spree_api (= 1.2.0.rc1)
@@ -38,8 +40,10 @@ PATH
     spree_sample (1.2.0.rc1)
       spree_core (= 1.2.0.rc1)
 
-PATH
-  remote: ../../contributions/spree_auth_devise
+GIT
+  remote: git://github.com/kunalchaudhari/spree_auth_devise.git
+  revision: 4f91d6dd6cf52fe4ddbad57e489473e852145823
+  branch: support-spree-1851
   specs:
     spree_auth_devise (1.0.0)
       cancan (= 1.6.7)
@@ -99,6 +103,12 @@ GEM
       builder (>= 2.0.0)
     builder (3.0.0)
     cancan (1.6.7)
+    capistrano (2.12.0)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
     cocaine (0.2.1)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -146,6 +156,13 @@ GEM
     nested_set (1.7.0)
       activerecord (>= 3.0.0)
       railties (>= 3.0.0)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
+    net-sftp (2.0.5)
+      net-ssh (>= 2.0.9)
+    net-ssh (2.5.2)
+    net-ssh-gateway (1.1.0)
+      net-ssh (>= 1.99.1)
     nokogiri (1.5.5)
     orm_adapter (0.0.7)
     paperclip (2.7.0)
@@ -219,6 +236,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  capistrano
   coffee-rails (~> 3.2.1)
   jquery-rails
   rails (= 3.2.8)

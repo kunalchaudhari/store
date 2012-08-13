@@ -1,19 +1,35 @@
+body {
+  font-weight: 300 !important;
+}
+
+textarea, input[type="date"],
+input[type="datetime"], input[type="datetime-local"],
+input[type="email"], input[type="month"], input[type="number"],
+input[type="password"], input[type="search"], input[type="tel"],
+input[type="text"], input[type="time"], input[type="url"],
+input[type="week"] {
+  font-weight: 300;
+}
+
 #logo {
   padding-top: 25px;
 }
 
+#header {
+  border-bottom: solid 1px $seperate_element_border_color;
+  padding-bottom: 20px;
+}
+
 #sidebar {
-  margin-left: 30px;
+  margin-right: 30px;
 }
 
 nav#top-nav-bar {
   padding-top: 15px;
-  margin-left: 30px;
 
   #search-bar {
     float: left;
     padding-left: 0;
-    margin-left: -20px;
 
     #taxon {
       display: none;
@@ -22,14 +38,113 @@ nav#top-nav-bar {
 
   ul {
     li {
-      a {
+      a{
         text-transform: none;
-        font-weight: normal;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+#breadcrumbs {
+  li {
+    span {
+      text-transform: none;
+      font-weight: 300;
+    }
+  }
+}
+
+ul#products li {
+  font-weight: 300;
+  text-align: left;
+
+  .price {
+    font-weight: 300;
+    font-size: 13px;
+  }
+
+  a.info {
+    text-decoration: none;
+    border: 0 none;
+  }
+
+  .product-image {
+    padding: 0;
+    border: 0 none;
+    background-color: transparent;
+
+    img {
+      border: solid 1px #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #ccc;
+    }
+  }
+}
+
+.taxon-title, .subtaxon-title {
+  text-transform: none;
+  border-bottom: 0 none;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.subtaxon-title {
+  font-size: 18px;
+}
+
+div[data-hook="taxon_children"] {
+  padding-top: 20px;
+  .taxon {
+    padding-top: 20px;
+  }
+}
+
+nav#taxonomies {
+
+  .taxonomy-root {
+    text-transform: none;
+    border-bottom: 0 none;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 300;
+  }
+
+  .taxons-list {
+    padding-left: 0;
+    border-bottom: solid 1px $seperate_element_border_color;
+
+    li {
+      list-style-type: none;
+      a {
+        font-size: 14px;
+        display: block;
+        padding: 5px;
+        border-top: solid 1px $seperate_element_border_color;
+        color: #1BA237;
       }
     }
   }
 }
 
 
+#product-images {
+  #main-image {
+    text-align: left;
+    border: 0 none;
+    background-color: transparent;
+    img {
+      border: solid 1px darken($seperate_element_border_color, 5%);
+    }
+  }
+}
 
-
+#existing-customer, #new-customer, #forgot-password {
+  h6 {
+    text-transform: none;
+    font-size: 25px;
+    font-weight: 300;
+    padding-bottom: 30px;
+  }
+}

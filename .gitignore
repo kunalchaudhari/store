@@ -13,6 +13,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-config/database.yml
-config/deploy.rb
-config/deploy
+/config/database.yml
+/config/deploy.rb
+/config/deploy
+/public/spree/**

@@ -16,4 +16,5 @@ gem 'spree', :git => 'git://github.com/kunalchaudhari/spree.git', :branch => 're
 
 gem 'spree_auth_devise', :git => 'git://github.com/kunalchaudhari/spree_auth_devise.git', :branch => 'support-spree-1851'
 
+gem 'unicorn'
 gem 'capistrano'
